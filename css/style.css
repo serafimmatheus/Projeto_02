@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Pattaya', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*----------------------------*/
+/*-----CLASSES AUXILIARES-----*/
+/*----------------------------*/
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*----------------*/
+/*-----HEADER-----*/
+/*----------------*/
+
+header{
+	width: 100%;
+	background: rgb(220,220,220);
+	padding: 10px 20px;
+}
+
+div.logo-01 a{
+	padding: 20px 0;
+	float: left;
+	text-decoration: none;
+}
+
+div.logo-01 a h2{
+	color: rgb(0, 0, 0);
+}
+
+div.logo-02 a{
+	padding: 20px 0;
+	float: right;
+	text-decoration: none;
+	
+}
+
+div.logo-02 a h2{
+	color: rgb(0, 0, 0);
+}
+
+/*-------------------------*/
+/*-----SECTION MAIN-BG-----*/
+/*-------------------------*/
+
+section.main-bg > .container{
+	position: relative;
+	min-height: 600px;
+	background-image: url('../img/bg-form.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.bg-text-form h1{
+	background: rgb(210, 210, 210);
+	width: calc(100% + 80px);
+	padding: 30px;
+	margin-top: -40px;
+	margin-left: -40px; 
+}
+
+form.cadastro{
+	top: -15px;
+	position: absolute;
+	width: 450px;
+	height: calc(100% + 30px);
+	background: rgb(255, 255, 255); 
+	right: 40px;
+	padding: 40px;
+}
+
+div.nome label{
+	display: block;
+	margin-top: 35px; 
+}
+
+div.email label,.fone label{
+	display: block;
+	margin-top: 35px; 
+}
+
+div.nome input,.email input,.fone input{
+	width: 100%;
+	height: 50px;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+.enviar input{
+	width: 100%;
+	height: 60px;
+	padding: 8px;
+	margin-top: 55px;
+	background: #1565c0;
+	border: 0;
+	color: white;
+	font-size: 22px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.enviar input:hover{
+	background: #0d47a1;
+}
+
+form.cadastro div p{
+	padding-top: 15px; 
+}
+
+/*-----------------*/
+/*-----CHAMADA-----*/
+/*-----------------*/
+
+div.logo-chamada{
+	position: relative;
+}
+
+div.logo-chamada img{
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+section.chamada > .container{
+	background: #29526d;
+	padding: 60px;
+	text-align: center;
+}
+
+div.text-chamada{
+	max-width: 700px;
+	display: inline-block;
+	
+}
+
+div.text-chamada h2{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+div.text-chamada h4{
+	font-size: 17px;
+	margin-top: 20px;
+	font-weight: normal;
+	color: white;
+}
+
+/*---------------------------*/
+/*-----SECTION PORTFOLIO-----*/
+/*---------------------------*/
+
+
+
+div.port-single{
+	display: flex;
+	padding: 1px 0;
+}
+
+div.port-bg{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	min-height: 250px;
+}
+
+div.port-text{
+	background: #4683AB;
+	width: 40%;
+	padding: 80px;
+}
+
+div.port-text h3{
+	font-weight: normal;
+	margin-top: 29px;
+	color: white;
+}
+
+footer.footer{
+	padding: 20px;
+	background: rgb(220,220,220);
+}
+
+.footer-texto h2:nth-of-type(1){
+	float: left;
+	font-size: 18px;
+}
+
+.footer-texto h2:nth-of-type(2){
+	float: right;
+	font-size: 18px;
+}
+
+/*-----------------------------------*/
+
+@media screen and (max-width: 1024px){
+	form.cadastro{
+		right: 10px;
+	}
+
+	div.port-text{
+		padding: 60px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	div.port-single{
+		display: block;
+	}
+
+	div.port-bg{
+		width: 100%;
+	}
+
+	div.port-text{
+		width: 100%;
+	}
+
+	div.logo-chamada{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 510px){
+	header{
+		text-align: center;
+	}
+
+	.logo-01, .logo-02{
+		margin: 10px 0;
+		float: none;
+		display: inline-block;
+	}
+
+	form.cadastro{
+		float: left;
+		margin-left: 5px;
+	}
+
+	
+}
